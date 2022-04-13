@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Leonardo Silva</title>
+    </head>
+
+    <body>
+      <script type="text/javascript" src="javascript/index.js"></script>
+      <link rel="stylesheet" href="css/style.css" type="text/css">
+
+      <header class="Introduction">
+        <br>
+        <img class="profile" src="profile.jpg" alt="Profile picture">
+        <p>
+          Leonardo Schwartz da Costa Silva
+          <br>
+          Software Engineer, Web Developer, Game Developer
+        </p>
+
+        <a href="resume.pdf" download="resume.pdf">
+          <button onclick="downloaded()" class="MainButtons">Resume</button>
+        </a>
+        <a href="#Contact">
+          <button class="MainButtons">Contact</button>
+        </a>
+
+        <br>
+        <br>
+      </header>
+
+
+      <section class="AboutAndInfo">
+        <div class="About">
+          <h3>About Me and Academic Honesty</h3>
+          <p>
+            I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.
+            <br><br>
+            I am a Computer Programming and Analysis(CPA) student that is really interested in continuing learning javascript and css for web development, as well as exploring the game development field.
+            <br><br>
+            <b>Date: </b> Apr, 12 2022
+          </p>
+        </div>
+  
+        <div class="BasicInfo">
+          <p>
+            <h3>Basic Information</h3>
+            
+            <b>AGE:</b>           19<br>
+            <b>EMAIL:</b>         lschwartz-da-costa-s@myseneca.ca<br>
+            <b>LANGUAGE:</b>      English, Portuguese<br>
+            <b>CLASS SECTION:</b> NFF<br>
+            <b>STUDENT ID:</b>    148721202<br>
+            <b>INSTRUCTOR:</b>    Alireza Moghaddam<br>
+          </p>
+        </div>
+  
+      </section>
+
+      <h3 style="text-align: center;">Education</h3>
+      <section class="Education">
+        <div class="EducationDates">
+          <p>
+            2021-2014(expected) <br>
+            Ontario College Advanced Diploma <br>
+          </p>
+        </div>
+
+        <div class="EducationView">
+          <p>
+            Computer Programming and Analysis <br>
+            SENECA COLLEGE
+          </p>
+        </div>
+      </section>
+
+      <div id="Contact" class="Contact">
+        <h3 style="text-align: center;">Contact me</h3>
+        <form id="contact" action="https://httpbin.org/post" method="post" name="contact">
+          <label for="name">Name:</label>
+          <input id="name" type="text" name="name" required>
+          <br>
+          <label for="email">Email:</label>
+          <input id="email" type="email" name="email" required>
+          <br>
+          <label for="city">City:</label>
+          <input list="city" required>
+          <datalist id="city">
+            <option value="Toronto">
+            <option value="Vancouver">
+            <option value="Montreal">
+            <option value="Niagra Falls">
+            <option value="Victoria">
+            <option value="Halifax">
+            <option value="Quebec">
+            <option value="Calgary">
+            <option value="Ottawa">
+            <option value="Edmonton">
+          </datalist>
+          <br>
+          <label for="postalCode">Postal Code:</label>
+          <input id="postalCode" type="text" name="postalCode" placeholder="M5W1E6" pattern="[A-Z0-9]{6}" required>
+          <br>
+          <input type="radio" id="question" name="contactType" value="question">
+          <label for="question">Question</label>
+          <br>
+          <input type="radio" id="comment" name="contactType" value="comment">
+          <label for="comment">Comment</label>
+          <br>
+          <input type="radio" id="hiring" name="contactType" value="hiring">
+          <label for="hiring">Hiring</label>
+          <br>
+          <label for="message">Message: </label>
+          <br>
+          <textarea id="message" name="message" rows="5"></textarea>
+          <br>
+          <input type="reset" value="Reset Info">
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+      <footer style="background-color: #c8c7b4;">
+        <p>Leonardo Schwartz da Costa Silva&copy; 2022</p>
+      </footer>
+    </body>
+</html>
